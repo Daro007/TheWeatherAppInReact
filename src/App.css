@@ -1,0 +1,122 @@
+.App {
+  font-family: "Josefin Sans";
+}
+
+.header {
+  background-color: #235789;
+  text-align: center;
+  padding: 2em 0em;
+  color: #ffffff;
+}
+
+.main {
+  text-align: center;
+  padding: 1em;
+}
+
+#search {
+  font-size: 1.75rem;
+  font-family: "Roboto";
+}
+
+#search input {
+  margin: 0em 0.5em;
+  padding: 0.5em 1em;
+  border: 2px solid #39a0ed;
+  border-radius: 5px;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  min-width: 180px;
+}
+#search label {
+  color: #235789;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+#search button {
+  font-size: 1rem;
+  background-color: #235789;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  color: #fdfffc;
+  transition: 0.3s;
+  letter-spacing: 2px;
+}
+
+#search button:hover,
+#search button:focus {
+  background-color: #39a0ed;
+}
+.weather {
+  text-align: center;
+  font-size: 1rem;
+}
+
+#footer {
+  margin-top: 3em;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #bfc0c0;
+  color: #020100;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: #235789;
+  /* opacity: 0.6; */
+}
+
+a {
+  color: #235789;
+  font-size: 1.25rem;
+  padding: 0em 0.5em;
+  transition: 0.5s;
+}
+a:hover,
+a:focus {
+  color: #39a0ed;
+}
+
+.App-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.error {
+  color: #8c1c13;
+}
+@media (min-width: 630px) {
+  .weather {
+    font-size: 2rem;
+    opacity: 0.8;
+  }
+  #search button {
+    font-size: 1.125rem;
+  }
+  #search label {
+    font-size: 2rem;
+  }
+  #search input {
+    font-size: 1.125rem;
+    min-width: 250px;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 10s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
